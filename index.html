@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Список дел</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Список дел</h1>
+    <ul class="todo-list">
+      <li class="todo-list-item">
+        <label>
+          <input class="todo-list-input" type="checkbox">
+          <span>Покормить кота</span>
+        </label>
+      </li>
+      <li class="todo-list-item">
+        <label>
+          <input class="todo-list-input" type="checkbox">
+          <span>Выучить JS</span>
+        </label>
+      </li>
+        <li class="todo-list-item">
+        <label>
+          <input class="todo-list-input" type="checkbox">
+          <span>Заказать такси</span>
+        </label>
+      </li>
+      <li class="todo-list-item">
+        <label>
+          <input class="todo-list-input" type="checkbox">
+          <span>Занятся спортом</span>
+        </label>
+      </li>
+      <li class="todo-list-item">
+        <label>
+          <input class="todo-list-input" type="checkbox">
+          <span>подготовится к служению</span>
+        </label>
+      </li>
+         <li class="todo-list-item">
+        <label>
+          <input class="todo-list-input" type="checkbox">
+          <span>Создать саундтрек</span>
+        </label>
+      </li>
+      <li class="todo-list-item">
+        <label>
+          <input class="todo-list-input" type="checkbox">
+          <span>Играть на  гитаре</span>
+        </label>
+      </li>
+      <li class="todo-list-item">
+        <label>
+          <input class="todo-list-input" type="checkbox">
+          <span>Просто отдохнуть (полежать)</span>
+        </label>
+      </li>
+    </ul>
+    <p class="empty-tasks hidden">Все задачи выполнены. Новых задач нет.</p>
+    <form class="add-form" action="https://echo.htmlacademy.ru/courses" method="post">
+      <input class="add-form-input" type="text"  aria-label="Описание задачи" placeholder="Например, купить слона" required>
+      <button class="add-form-button" type="submit">Добавить задачу</button>
+    </form>
+
+    <template id="task-template">
+      <li class="todo-list-item">
+        <label>
+          <input type="checkbox" class="todo-list-input">
+          <span></span>
+        </label>
+      </li>
+    </template>
+    <script src="script.js"></script>
+  </body>
+</html>
